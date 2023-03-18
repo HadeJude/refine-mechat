@@ -1,0 +1,170 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  text-shadow: 0.5px 0.5px 1.5px #000000c9;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+}
+
+.chat-window {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 35%;
+  height: 0px;
+  -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  max-height: 100%;
+  font-size: 14px;
+  text-shadow: 0.5px 0.5px 1.5px #000000c9;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+
+.chat-input {
+  font-size: 0.9rem;
+  text-shadow: 0.5px 0.5px 1.5px #000000c9;
+  position: absolute;
+  top: 22.7vh;
+  left: 16.5px;
+  width: 29.7vw;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.1rem;
+  text-shadow: 0.5px 0.5px 1.5px #000000c9;
+  display: block;
+  box-sizing: border-box;
+  padding: 4.5px;
+  padding-left: 12px;
+  color: #ffffff;
+  background-color: rgba(82, 82, 82, 0.555);
+  width: 60%;
+  min-height: 3vh;
+  max-height: 3vh;
+  border: 1px solid rgba(82, 82, 82);
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  font-size: 1.2rem;
+  text-shadow: 0.5px 0.5px 1.5px #000000c9;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(82, 82, 82, 0.555);
+  border: 1px solid rgba(82, 82, 82);
+  border-radius: 2px;
+  width: 60%;
+}
+
+.prefix {
+  position: absolute;
+  margin-top: 5.5px;
+  left: 8px;
+}
+
+.help {
+  color: #f3f3f3;
+}
+
+.disabled {
+  color: #f3f3f3;
+}
+
+.suggestion {
+  margin-bottom: 15px;
+}
+
+.chat-message {
+  display: inline-block !important;
+  padding: 0.25vw;
+  margin: 0.1vw;
+  border-radius: 2px;
+  background-color: rgba(53, 105, 150, 0.650);
+  border: 2px solid rgb(53,104,150);
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+
+.chat-message.advert {
+  background-color: rgba(47, 92, 115, 0.650);
+  border: 2px solid rgb(47, 92, 115);
+}
+
+.warning {
+  background-color: rgba(255, 136, 0, 0.650);
+  border: 2px solid rgb(255, 136, 0);
+}
+
+.normal {
+  background-color: rgba(47, 114, 181, 0.650);
+  border: 2px solid rgb(47, 114, 181);
+}
+
+.error {
+  background-color: rgba(191, 36, 36, 0.650);
+  border: 2px solid rgb(191, 36, 36);
+}
+
+.chat-message.system {
+  background-color: rgba(190, 97, 18, 0.650);
+  border: 2px solid rgb(190, 97, 18);
+}
+
+.chat-message.emergency {
+  background-color: rgba(163, 62, 48, 0.650);
+  border: 2px solid rgb(163, 62, 48);
+}
+
+.chat-message.nonemergency {
+  background-color: rgba(112, 25, 25, 0.650);
+  border: 2px solid rgb(112, 25, 25);
+}
+
+.chat-message.report {
+  background-color: rgba(86, 173, 10, 0.650);
+  border: 2px solid rgb(86, 173, 10);
+}
