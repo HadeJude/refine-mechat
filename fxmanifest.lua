@@ -4,6 +4,7 @@ game 'common'
 
 ui_page 'html/index.html'
 
+shared_script 'config.lua'
 client_script 'cl_chat.lua'
 server_script 'sv_chat.lua'
 

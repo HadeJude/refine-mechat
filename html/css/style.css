@@ -129,6 +129,17 @@ textarea:focus, input:focus {
 }
 
 
+.chat-message.police {
+  background-color: rgba(2,67,253, 0.650);
+  border: 2px solid rgb(2,67,253);
+}
+
+
+.chat-message.ems {
+  background-color: rgba(254,1,3, 0.650);
+  border: 2px solid rgb(254,1,3);
+}
+
 .chat-message.advert {
   background-color: rgba(47, 92, 115, 0.650);
   border: 2px solid rgb(47, 92, 115);

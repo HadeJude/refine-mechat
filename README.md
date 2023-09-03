@@ -2,6 +2,9 @@
  A clean Standalone chat that I have a long time ago and optimize it with Unique 3dme on it
 
 
+## Need Unique Script Experience?
+- [Tebex](https://refined.tebex.io/)
+
 ## Need Assistance?
 - [Discord](https://discord.com/invite/GrGGkQtv5P)
 
@@ -53,6 +56,8 @@ This is the usage and example that you can do:
         TriggerEvent("chatMessage", "Testing", "emergency", "Test")
         TriggerEvent("chatMessage", "Testing", "nonemergency", "Test")
         TriggerEvent("chatMessage", "Testing", "report", "Test")
+        TriggerEvent("chatMessage", "police", "report", "Test")
+        TriggerEvent("chatMessage", "ems", "report", "Test")
     end, false)
 
     --if you want to add suggest in "standalone" mode you can use look for this example and add something on the line
@@ -64,5 +69,18 @@ This is the usage and example that you can do:
         --this one is example
         TriggerEvent('chat:addSuggestion', '/thisisexample', 'change me here', {{ name="NAME"}})
     end)
+    -- sometimes the 911 or 311 didn't work because you already have it on your dispatch so I provide some Event that you can put on or just disable your old 911 or 311 call
+
+    --Client Side
+    TriggerServerEvent('refine-mechat:dispatch:police', msg)
+    TriggerServerEvent('refine-mechat:dispatch:ambulance', msg)
+    TriggerServerEvent('refine-mechat:anon:police', msg)
+    TriggerServerEvent('refine-mechat:anon:ambulance', msg)
+
+    --Server Side
+    TriggerEvent('refine-mechat:dispatch:police', msg)
+    TriggerEvent('refine-mechat:dispatch:ambulance', msg)
+    TriggerEvent('refine-mechat:anon:police', msg)
+    TriggerEvent('refine-mechat:anon:ambulance', msg)
 
 ```
