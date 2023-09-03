@@ -6,7 +6,7 @@
 - [Tebex](https://refined.tebex.io/)
 
 ## Need Assistance?
-- [Discord](https://discord.com/invite/GrGGkQtv5P)
+- [Discord](https://discord.gg/Va9YArM6uW)
 
 
 ### Features
