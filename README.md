@@ -17,6 +17,7 @@
  * 3dme Support Standalone with Name on it
  * Alot of ME function
  * Standalone
+ * Whitelist Calls With Reply Method
 
 ---
 - [Demos](#demos)
